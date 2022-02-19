@@ -105,6 +105,38 @@ img {
   letter-spacing: 0.03em;
 }
 
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  /* fill: #afb1b8; */
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+  /* fill: #ffffff; */
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  /* background-color: var(--accent-color); */
+  fill: #ffffff;
+}
+
+.social-list-icon {
+  fill: #afb1b8;
+}
+
 /* Шапка сайта */
 .header-container {
   display: flex;
@@ -182,6 +214,10 @@ img {
 
 /* Герой */
 .hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/bg.jpg');
+  background-size: cover;
+
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -291,6 +327,8 @@ img {
   border-radius: 0px 0px 4px 4px;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .team {
   background-color: var(--background-color-team);
@@ -308,6 +346,8 @@ img {
   letter-spacing: 0.03em;
 }
 .team-member-profession {
+  margin-bottom: 16px;
+
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.19;
